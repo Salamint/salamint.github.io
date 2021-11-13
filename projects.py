@@ -1,8 +1,17 @@
+import cgi
+import cgitb
+
+cgitb.enable()
+
+
+print("Content-Type: text/html")
+
+html = """
 <!DOCTYPE html>
 
 <html lang="fr">
     <head>
-        <title>Warna38 - Accueil</title>
+        <title>Warna38 - Projets</title>
         <link rel="stylesheet" type="text/css" href="assets/style.css">
         <meta charset="UTF-8">
     </head>
@@ -15,13 +24,9 @@
                         <button>Principal</button>
                         <ul class="drop-down-content">
                             <li class="drop-down-item">
-                                <button type="button">
-                                    <a href="https://warna38.github.io/">Accueil</a>
-                                </button>
+                                <button type="button"><a href="https://warna38.github.io/">Accueil</a></button>
                             </li><li class="drop-down-item">
-                                <button type="button">
-                                    <a href="https://warna38.github.io/">Wikis</a>
-                                </button>
+                                <button type="button"><a href="https://warna38.github.io/">Wikis</a></button>
                             </li>
                         </ul>
                     </li>
@@ -29,24 +34,19 @@
                         <button>Projets</button>
                         <ul class="drop-down-content">
                             <li class="drop-down-item">
-                                <button type="button">
-                                    <a href="https://warna38.github.io/projects.py">Tous les projets</a>
-                                </button>
-                            </li>
-                            <li class="drop-down-item">
-                                <button type="button">
-                                    <a href="https://warna38.github.io/projects.py#website">Site web</a>
-                                </button>
+                                <button type="button"><a href="https://warna38.github.io/">Site web</a></button>
                             </li>
                         </ul>
                     </li>
                 </ul>
             </nav>
         </header>
-        <h1>Hi! Welcome to my website!</h1>
-        <p>This is my brand-new website! I wish you'll like it! :)</p>
+        <article id="website">
+            <p>Mon site web :</p>
+        </article>
         <footer>
             <p>Leave a like</p>
         </footer>
     </body>
 </html>
+"""
