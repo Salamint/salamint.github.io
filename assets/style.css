@@ -1,6 +1,53 @@
 
 * {
-    background-color: black;
+    background-color: #222222;
     color: white;
     font-family: Arial;
+}
+
+header {
+    outline: 3px solid whitesmoke;
+    outline-offset: 8px;
+}
+
+footer {
+    outline: 3px solid whitesmoke;
+    outline-offset: 8px;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.drop-down {
+    position: relative;
+    display: inline-block;
+}
+
+.drop-down:hover .drop-down-container {
+    display: flex;
+}
+
+.drop-down:hover .drop-down-item {
+    display: inline-block;
+}
+
+.drop-down-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.drop-down-item {
+    display: none;
 }
