@@ -50,8 +50,13 @@
     </ul>
   </nav>
 </header>
-<h1>Hi! Welcome to my website!</h1>
-<p>This is my brand-new website! I wish you'll like it! :)</p>
+
+<section>
+  <h1>Hi! Welcome to my website!</h1>
+  <p>This is my brand-new website! I wish you'll like it! :)</p>
+  <?= "Hello World!" ?>
+</section>
+
 <footer>
   <p>Leave a like</p>
 </footer>
